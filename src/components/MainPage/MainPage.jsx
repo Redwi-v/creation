@@ -1,4 +1,5 @@
 import './mainPage.scss';
+
 //img
 import logo from '../../img/logo.png';
 import attributes from '../../img/attributes.png';

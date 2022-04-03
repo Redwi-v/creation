@@ -55,11 +55,11 @@
 		display: flex;
 		overflow: auto;
 		opacity: 0;
-		z-index: -1;
 		visibility: hidden;
 		align-items: center;
 		transition: width, height, 0.4s;
 		justify-content: space-around;
+		z-index: 90;
 
 		&.menuOpen {
 			width: 100%;
@@ -68,7 +68,6 @@
 
 			opacity: 1;
 			visibility: visible;
-			z-index: 90;
 			.link {
 				display: block;
 			}
@@ -83,7 +82,7 @@
 		height: 250px;
 		cursor: pointer;
 		background-color: #444;
-		animation-duration: 2s;
+		animation-duration: 1s;
 		animation-name: itemAnimate;
 		display: none;
 		border-radius: 30px;
