@@ -8,11 +8,8 @@ const initialState = {
 export const menu = (state = initialState, action = { type: openMenu }) => {
 	switch (action.type) {
 		case CLOSE_MENU:
-			console.log('close');
 			return { ...state, menuOpen: false };
 		case OPEN_MENU:
-			console.log('open');
-
 			return { ...state, menuOpen: true };
 		default:
 			return state;

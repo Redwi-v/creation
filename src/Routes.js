@@ -15,7 +15,7 @@ const RenderRoutes = () => {
 				<Route path='/legends' element={<Legends />} />
 				<Route path='/music' element={<Music />} />
 				<Route path='/crafts' element={<Crafts />} />
-				{/* <Route path='*' element={<Navigate to='/mainpage' replace='true' />} /> */}
+				<Route path='*' element={<Navigate to='/mainpage' replace='true' />} />
 			</Routes>
 		</div>
 	);
