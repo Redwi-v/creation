@@ -19,7 +19,7 @@ const Music = props => {
 							<img className={style.iamge} src={needle} alt='' />
 						</div>
 					</div>
-					<MusicList />
+					<MusicList {...props} />
 				</div>
 			</div>
 		</div>

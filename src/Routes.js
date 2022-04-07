@@ -3,8 +3,8 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
 import Clothes from './components/Clothes/Clothes';
 import Legends from './components/Legends/Legends';
-import Music from './components/Music/Music';
 import Crafts from './components/Crafts/Crafts';
+import MusicContainer from './components/Music/MusicContainer';
 
 const RenderRoutes = () => {
 	return (
@@ -13,7 +13,7 @@ const RenderRoutes = () => {
 				<Route path='/mainpage' element={<MainPage />} />
 				<Route path='/clothes' element={<Clothes />} />
 				<Route path='/legends' element={<Legends />} />
-				<Route path='/music' element={<Music />} />
+				<Route path='/music' element={<MusicContainer />} />
 				<Route path='/crafts' element={<Crafts />} />
 				<Route path='*' element={<Navigate to='/mainpage' replace='true' />} />
 			</Routes>
