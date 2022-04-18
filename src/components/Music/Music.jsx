@@ -4,7 +4,7 @@ import MusicList from './MusicList/MusicLIst';
 import record from '../../img/record.png';
 import stand from '../../img/forRecords.png';
 import needle from '../../img/needle.png';
-import { useEffect, useRef } from 'react';
+import {  useRef } from 'react';
 
 const Music = props => {
 	const { isPlay } = props;

@@ -5,7 +5,7 @@ const MusicItem = props => {
 	const { songName, team, controls, src, nowPlay, isPlay, progress } = props;
 	const { play } = controls;
 
-	const imPlay = isPlay && src == nowPlay;
+	const imPlay = isPlay && src === nowPlay;
 
 	const progressBar = useRef(null);
 

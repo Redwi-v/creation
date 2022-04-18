@@ -1,11 +1,22 @@
 .slider {
 	margin-top: 100px;
+	position: relative;
 }
-.content {
-	display: flex;
-	justify-content: center;
 
-	p {
-		max-width: 350px;
-	}
+
+.arrow{
+	position: absolute;
+
+	top: 50%;
+	z-index: 20;
+}
+
+.arrowleft{
+	transform: rotate(180deg);
+	left: 0;
+	
+}
+
+.arrowRight{
+	right: 0;
 }
