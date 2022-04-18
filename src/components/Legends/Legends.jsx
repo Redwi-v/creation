@@ -1,9 +1,9 @@
+import style from './legends.module.scss';
+
 const Legends = props => {
 	return (
 		<div className=''>
-			<div className='container'>
-				<h1>Legends</h1>
-			</div>
+			<h1>legends</h1>
 		</div>
 	);
 };

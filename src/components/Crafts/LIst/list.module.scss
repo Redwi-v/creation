@@ -1,0 +1,26 @@
+.craftLIst {
+	a {
+		display: block;
+	}
+}
+
+.navigation {
+	background-color: #3f3f3f;
+	color: #fff;
+	max-width: 200px;
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	overflow-y: auto;
+	max-height: 500px;
+	scrollbar-width: thin;
+	margin-left: 20px;
+	margin-right: -15px;
+}
+
+.item {
+	padding: 10px 20px;
+	&:hover {
+		background-color: #323232;
+	}
+}

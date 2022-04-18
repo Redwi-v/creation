@@ -25,7 +25,7 @@
 		background-color: #afffde;
 		border: none;
 		cursor: pointer;
-		z-index: 100;
+		z-index: 901;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -59,7 +59,7 @@
 		align-items: center;
 		transition: width, height, 0.4s;
 		justify-content: space-around;
-		z-index: 90;
+		z-index: 900;
 		flex-wrap: wrap;
 		padding-top: 30px;
 
@@ -89,6 +89,7 @@
 		animation-name: itemAnimate;
 		display: none;
 		border-radius: 30px;
+		z-index: 1001;
 		overflow: hidden;
 		align-items: center;
 		flex-direction: column;

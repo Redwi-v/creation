@@ -5,16 +5,20 @@
 .needle {
 	max-width: 150px;
 	margin-top: -40px;
-	transform-origin: 90px 75px;
 	z-index: 85;
-	transform: rotate(0deg);
-	&.needlePlay {
-		animation: needlePlay 2s;
-		animation-fill-mode: forwards;
-	}
-	&.needlePause {
-		animation: needlePause 2s;
-		animation-fill-mode: forwards;
+
+	.iamge {
+		transform-origin: 120px 75px;
+		&.needlePlay {
+			animation: needlePlay 2s;
+
+			animation-fill-mode: forwards;
+		}
+		&.needlePause {
+			animation: needlePause 2s;
+
+			animation-fill-mode: forwards;
+		}
 	}
 }
 @media (max-width: 480px) {

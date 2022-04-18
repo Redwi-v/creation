@@ -99,3 +99,52 @@ $black: #3f3f3f;
 	color: #fff;
 	padding: 20px 0;
 }
+
+@media (max-width: 1009px) {
+	.greetings__wraper {
+		padding-bottom: 200px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.greetings__discription {
+		width: 60%;
+		margin: 0;
+		text-align: center;
+		font-size: 28px;
+		min-width: 300px;
+	}
+	.greetings__attributes {
+	}
+
+	.info-block__wraper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.info-block__image {
+		margin-left: 0;
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.lines {
+		transform: rotate(60deg);
+	}
+
+	.info .info-block:nth-child(even) {
+		.lines {
+			transform: rotate(50deg);
+		}
+		.info-block__wraper {
+			justify-content: center;
+
+			.info-block__text {
+				order: -1;
+			}
+		}
+		.info-block__image {
+			margin: 0 0px 0 0;
+		}
+	}
+}

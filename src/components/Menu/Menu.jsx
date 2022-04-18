@@ -32,7 +32,7 @@ const Menu = props => {
 					</NavLink>
 				</li>
 				<li className={style.item}>
-					<NavLink className={style.link} to='/crafts'>
+					<NavLink className={style.link} to='/crafts/1'>
 						<img src={matryoshka} alt='matryoshka-img' />
 						<h2>Изделия</h2>
 					</NavLink>

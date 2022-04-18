@@ -1,9 +1,11 @@
 import Slider from 'react-slick';
+import Slide from './Slide/Slide';
+
+import style from './clothes.module.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import style from './clothes.module.scss';
 
-import Slide from './Slide/Slide';
+import arrow from '../../img/icons/arrow.png';
 
 const Clothes = props => {
 	const settings = {
@@ -13,17 +15,15 @@ const Clothes = props => {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		nextArrow: <SampleNextArrow className={style.arrow}/>,
-		prevArrow: <SampleNextArrow direction='left'/>,
+		nextArrow: <SampleNextArrow className={style.arrow} />,
+		prevArrow: <SampleNextArrow direction='left' />,
 	};
 	return (
-		<div className='container'>
-			<Slider {...settings} className={style.slider}>
-				<Slide />
-				<Slide />
-				<Slide />
-			</Slider>
-		</div>
+		<Slider {...settings} className={style.slider}>
+			<Slide />
+			<Slide />
+			<Slide />
+		</Slider>
 	);
 };
 
@@ -32,11 +32,11 @@ export default Clothes;
 const SampleNextArrow = props => {
 	const { onClick, direction } = props;
 
-	const chosederection = direction === 'left' ? style.arrowleft : style.arrowRight
+	const chosederection = direction === 'left' ? style.arrowleft : style.arrowRight;
 
 	return (
 		<div className={`${style.arrow} ${chosederection}`}>
-			<button onClick={onClick}>{'>>'}</button>
+			<img onClick={onClick} src={arrow} alt='arrow' />
 		</div>
 	);
 };

@@ -1,10 +1,8 @@
 import style from './musicLIst.module.scss';
 
-import logo from '../../../img/logo.png';
-import { NavLink } from 'react-router-dom';
-
 import { useRef } from 'react';
 import MusicItem from '../MusicItem/MusicItem';
+import Logo from '../../Logo/Logo';
 
 const MusicList = props => {
 	const { musicList, Controls, nowPlay, isPlay, progress } = props;
@@ -35,9 +33,7 @@ const MusicList = props => {
 		<div className={style.block}>
 			<audio ref={audio}></audio>
 
-			<NavLink to='mainpage'>
-				<img src={logo} alt='logo' className={style.logo} />
-			</NavLink>
+			<Logo className={style.logo} />
 
 			<ul className={style.music_list}>{renderItems()}</ul>
 		</div>

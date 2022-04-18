@@ -1,13 +1,50 @@
 .content {
 	display: flex;
 	justify-content: center;
+	z-index: 10;
+	align-items: center;
+}
 
-	p {
-		max-width: 350px;
+.image {
+	height: 55%;
+	width: 55%;
+	padding: 0 20px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 
-.title{
-	margin-bottom: 40px;
-	color: red;
+.text {
+	width: 40%;
+	margin-top: -4px;
+	span {
+		font-size: 30px;
+		color: #ff5555;
+	}
+}
+
+.title {
+	margin: 0px auto 50px auto;
+}
+
+@media (max-width: 902px) {
+	.content {
+		flex-direction: column;
+	}
+	.image {
+		width: 100%;
+	}
+
+	.text {
+		width: 100%;
+	}
+
+	.slider {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
