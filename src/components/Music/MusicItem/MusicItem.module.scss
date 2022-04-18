@@ -1,9 +1,13 @@
 .image {
-	object-fit: cover;
 	width: 50px;
 	height: 50px;
 	margin-right: 15px;
 	border-radius: 15px;
+	background-color: #3f3f3f;
+	background-image: url('../../../img/icons/play.png');
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: 12px 8px;
 }
 .name {
 }
@@ -12,15 +16,41 @@
 
 .item {
 	display: flex;
-	background-color: #9ce1c4;
+	background-color: #9cf4cf;
 	border-radius: 20px;
-	width: 300px;
+	max-width: 300px;
 	padding: 10px 20px;
 	cursor: pointer;
-	&:not(:last-child) {
-		margin-bottom: 10px;
-	}
+	transition: background 0.2s;
+	margin-bottom: 10px;
 	&:hover {
-		background-color: #83ceaf;
+		background-color: #67e4b0;
+	}
+}
+.progressContainer {
+	background-color: #3f3f3f;
+	border-radius: 10px;
+	height: 4px;
+	width: 200px;
+	align-items: center;
+	z-index: -1;
+	opacity: 0;
+	display: flex;
+
+	.progress {
+		width: 0;
+		height: 100%;
+		background-color: #a1f7d3;
+	}
+}
+.play {
+	.image {
+		background-image: url('../../../img/icons/pause.png');
+	}
+	background-color: #67e4b0;
+
+	.progressContainer {
+		z-index: 1;
+		opacity: 1;
 	}
 }

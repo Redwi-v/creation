@@ -1,10 +1,34 @@
+.music {
+	overflow: hidden;
+}
+
 .needle {
 	max-width: 150px;
 	margin-top: -40px;
 	transform-origin: 90px 75px;
 	z-index: 85;
 	transform: rotate(0deg);
+	&.needlePlay {
+		animation: needlePlay 2s;
+		animation-fill-mode: forwards;
+	}
+	&.needlePause {
+		animation: needlePause 2s;
+		animation-fill-mode: forwards;
+	}
 }
+@media (max-width: 480px) {
+	.needle {
+		max-width: 120px;
+	}
+}
+
+@media (max-width: 370px) {
+	.needle {
+		max-width: 100px;
+	}
+}
+
 .stand {
 	position: relative;
 	width: 100%;
@@ -25,13 +49,11 @@
 	height: 100%;
 	object-fit: contain;
 }
-.rotate {
-	transform-origin: 50% 50%;
-	transform: rotate(0deg);
-}
 
 .content {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .pleer {
@@ -41,4 +63,36 @@
 	justify-content: space-between;
 	max-width: 600px;
 	height: 500px;
+}
+
+.rotate {
+	animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes needlePlay {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes needlePause {
+	0% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
 }
