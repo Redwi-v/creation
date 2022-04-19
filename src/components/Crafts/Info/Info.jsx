@@ -16,14 +16,11 @@ const Info = props => {
 	return (
 		<div className={style.info}>
 			<div className={style.image}>
-				<img src={tray} alt='tray' />
+				<img src={renderel.image} alt='tray' />
 			</div>
 			<div className={style.text}>
-				<span>{renderel.title} </span> ipsum, dolor sit amet consectetur adipisicing elit. Enim error, repellat rerum
-				labore corporis autem explicabo accusamus veritatis nesciunt minima eius culpa? Possimus recusandae incidunt
-				perferendis. Quisquam sit dolore nostrum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-				ratione, inventore rem labore hic voluptatum iure officiis voluptates facere magni corrupti reprehenderit sit
-				ipsam accusantium blanditiis quaerat dolores, est vel.
+				<h2 className={style.title}>{renderel.title} </h2>
+				{renderel.text}
 			</div>
 		</div>
 	);

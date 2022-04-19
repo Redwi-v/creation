@@ -5,7 +5,7 @@ const Legends = props => {
 	const { legendsList } = props;
 
 	const items = legendsList.map(legend => {
-		return <Item key={legend.id} />;
+		return <Item key={legend.id} title={legend.title} text={legend.text} />;
 	});
 
 	return (
@@ -21,16 +21,12 @@ const Legends = props => {
 export default Legends;
 
 const Item = props => {
+	const { title, text } = props;
+
 	return (
 		<li className={style.item}>
-			<h2 className={style.title}>LegendOne</h2>
-			<p className={style.text}>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae omnis voluptate quam eius illum
-				voluptatem blanditiis ab dolor reiciendis? Tempore, tempora fuga dolor doloremque nobis laboriosam suscipit
-				similique labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id amet et aspernatur eos
-				eaque, optio minima? Molestias, similique! Animi hic sit enim facilis dignissimos, a iusto. Laboriosam, repellat
-				architecto!
-			</p>
+			<h2 className={style.title}>{title}</h2>
+			<p className={style.text}>{text}</p>
 		</li>
 	);
 };

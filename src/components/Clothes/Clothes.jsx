@@ -8,6 +8,12 @@ import 'slick-carousel/slick/slick-theme.css';
 import arrow from '../../img/icons/arrow.png';
 
 const Clothes = props => {
+	const { slidesList } = props;
+
+	const slides = slidesList.map((el, id) => {
+		return <Slide key={id} title={el.title} text={el.text} image={el.image} />;
+	});
+
 	const settings = {
 		fade: true,
 		dots: true,
@@ -20,9 +26,7 @@ const Clothes = props => {
 	};
 	return (
 		<Slider {...settings} className={style.slider}>
-			<Slide />
-			<Slide />
-			<Slide />
+			{slides}
 		</Slider>
 	);
 };

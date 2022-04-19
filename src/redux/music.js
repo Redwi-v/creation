@@ -1,5 +1,8 @@
-import audio1 from '../audio/m1.mp3';
-import audio2 from '../audio/m2.mp3';
+import Vhorovode from '../audio/Вхороводе.mp3';
+import polno_polno_vam_rebjata from '../audio/polno-polno-vam-rebjata.mp3';
+import moskva_zlatoglavaja from '../audio/moskva-zlatoglavaja.mp3';
+import u_golubja_u_sizogo from '../audio/u-golubja-u-sizogo.mp3';
+import belilicy from '../audio/belilicy.mp3';
 
 const PAUSE__SONG = 'PAUSE__SONG';
 const PLAY__SONG = 'PLAY__SONG';
@@ -9,29 +12,29 @@ const UPDATE__PROGRESS = 'UPDATE__PROGRESS';
 const initialState = {
 	musicList: [
 		{
-			songName: 'vivi',
-			team: 'dreamTeam',
-			src: audio1,
+			songName: 'В хороводе',
+			team: 'Ансамбль "калинка"',
+			src: Vhorovode,
 		},
 		{
-			songName: 'say me',
-			team: 'state',
-			src: audio2,
+			songName: 'Полно, Полно Вам, Ребята',
+			team: 'Борис Гмыря',
+			src: polno_polno_vam_rebjata,
 		},
 		{
-			songName: 'say me',
-			team: 'state',
-			src: audio2,
+			songName: 'Москва Златоглавая',
+			team: 'Анна Литвиненко',
+			src: moskva_zlatoglavaja,
 		},
 		{
-			songName: 'say me',
-			team: 'state',
-			src: audio2,
+			songName: 'Белилицы',
+			team: 'Людмила Зыкина',
+			src: u_golubja_u_sizogo,
 		},
 		{
-			songName: 'say me',
-			team: 'state',
-			src: audio2,
+			songName: 'У Голубя, У Сизого',
+			team: 'Елена Кутузова',
+			src: belilicy,
 		},
 	],
 
