@@ -15,11 +15,11 @@ const Music = props => {
 			<div className='container'>
 				<div className={style.content}>
 					<div className={style.pleer}>
-						<div ref={podium} className={`${style.stand} ${isPlay && style.rotate} fadeIn`}>
+						<div ref={podium} className={`${style.stand} ${isPlay && style.rotate}`}>
 							<img className={` ${style.iamge}`} src={stand} alt='' />
 							<img className={`${style.record}  ${style.iamge}`} src={record} alt='' />
 						</div>
-						<div className={`${style.needle} fadeIn`}>
+						<div className={`${style.needle} `}>
 							<img
 								className={`${style.iamge} ${(isPlay && style.needlePlay) || (!isPlay && style.needlePause)}`}
 								src={needle}
