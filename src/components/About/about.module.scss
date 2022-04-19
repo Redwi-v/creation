@@ -55,10 +55,14 @@
 
 .dopLibrarys {
 	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
 
+	div {
+		margin-bottom: 10px;
+	}
 	a {
 		margin-top: 10px;
-		display: inline-block;
 		text-decoration: underline;
 	}
 }

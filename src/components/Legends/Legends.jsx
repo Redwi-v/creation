@@ -9,7 +9,7 @@ const Legends = props => {
 	});
 
 	return (
-		<div className=''>
+		<div className='slideLeft'>
 			<Logo className={style.logo} />
 			<div className='container'>
 				<ul className={style.legends}>{items}</ul>

@@ -18,7 +18,7 @@ const MusicItem = props => {
 	}
 
 	return (
-		<li className={`${style.item} ${imPlay && style.play}`}>
+		<li className={`${style.item} ${imPlay && style.play} slideLeft`}>
 			<div
 				className={`${style.image}`}
 				onClick={() => {

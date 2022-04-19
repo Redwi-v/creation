@@ -16,12 +16,12 @@ const MainPage = props => {
 		<div className='mainPage'>
 			<div className='greetings'>
 				<div className='container'>
-					<img src={logo} alt='logo' className='greetings__logo' />
+					<img src={logo} alt='logo' className='greetings__logo slideDown' />
 					<div className='greetings__wraper'>
-						<p className='greetings__discription'>
+						<p className='greetings__discription slideRight'>
 							Путеводитель по народному <span className='greetings__color-green'>творчеству</span> России
 						</p>
-						<img src={attributes} alt='attributes' className='greetings__attributes' />
+						<img src={attributes} alt='attributes' className='greetings__attributes bounceIn' />
 					</div>
 				</div>
 			</div>

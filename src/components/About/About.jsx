@@ -14,7 +14,7 @@ import style from './about.module.scss';
 const About = props => {
 	return (
 		<div className=''>
-			<div className='container'>
+			<div className='container slideRight'>
 				<Logo className={style.logo} />
 				<div className={style.persons}>
 					<div className={style.person}>
@@ -27,7 +27,7 @@ const About = props => {
 					</div>
 				</div>
 				<h3 className={style.title}>Технологии</h3>
-				<div className={style.tools}>
+				<div className={style.tools + 'zoomer'}>
 					<div className={style.native}>
 						<Tool img={js} href='https://www.javascript.com/' />
 						<span>+</span>
@@ -50,7 +50,12 @@ const About = props => {
 					</div>
 					<div className={style.dopLibrarys}>
 						<h3>Дополнительные библиотеки</h3>
-						<a href='https://react-slick.neostack.com/'>React Slick</a>
+						<div>
+							<a href='https://react-slick.neostack.com/'>React Slick</a>
+						</div>
+						<div>
+							<a href='http://kristofferandreasen.github.io/wickedCSS/#'>Wicked CSS</a>
+						</div>
 					</div>
 				</div>
 				<h3>Источники информации</h3>

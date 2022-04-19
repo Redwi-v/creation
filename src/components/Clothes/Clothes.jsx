@@ -25,7 +25,7 @@ const Clothes = props => {
 		prevArrow: <SampleNextArrow direction='left' />,
 	};
 	return (
-		<Slider {...settings} className={style.slider}>
+		<Slider {...settings} className={style.slider + ' slideDown'}>
 			{slides}
 		</Slider>
 	);

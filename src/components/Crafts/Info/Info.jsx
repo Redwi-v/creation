@@ -14,7 +14,7 @@ const Info = props => {
 	});
 
 	return (
-		<div className={style.info}>
+		<div className={style.info + ' fadeIn'}>
 			<div className={style.image}>
 				<img src={renderel.image} alt='tray' />
 			</div>

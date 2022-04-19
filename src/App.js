@@ -1,5 +1,6 @@
 import RenderRoutes from './Routes';
 import MenuContainer from './components/Menu/MenuContainer';
+import './wickedcss.min.css';
 
 function App() {
 	return (
