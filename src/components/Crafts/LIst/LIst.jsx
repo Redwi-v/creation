@@ -14,7 +14,6 @@ const List = props => {
 			</li>
 		);
 	});
-	console.log(renderItems);
 
 	return (
 		<nav className={style.navigation}>

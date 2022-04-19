@@ -4,11 +4,13 @@ import thunk from 'redux-thunk';
 import { menu } from './menu';
 import { music } from './music';
 import { crafts } from './crafts';
+import { legends } from './legends';
 
 const redusers = combineReducers({
 	menu,
 	music,
 	crafts,
+	legends,
 });
 
 const store = createStore(redusers, applyMiddleware(thunk));

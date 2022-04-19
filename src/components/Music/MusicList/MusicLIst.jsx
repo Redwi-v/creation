@@ -11,23 +11,21 @@ const MusicList = props => {
 	const controls = new Controls(audio);
 
 	// create items for music list
-	const renderItems = () => {
-		return musicList.map(song => {
-			const { songName, team, src } = song;
-			return (
-				<MusicItem
-					nowPlay={nowPlay}
-					progress={progress}
-					isPlay={isPlay}
-					src={src}
-					controls={controls}
-					songName={songName}
-					team={team}
-					key={src}
-				/>
-			);
-		});
-	};
+	const renderItems = musicList.map((song, id) => {
+		const { songName, team, src } = song;
+		return (
+			<MusicItem
+				key={id}
+				nowPlay={nowPlay}
+				progress={progress}
+				isPlay={isPlay}
+				src={src}
+				controls={controls}
+				songName={songName}
+				team={team}
+			/>
+		);
+	});
 
 	return (
 		<div className={style.block}>
@@ -35,7 +33,7 @@ const MusicList = props => {
 
 			<Logo className={style.logo} />
 
-			<ul className={style.music_list}>{renderItems()}</ul>
+			<ul className={style.music_list}>{renderItems}</ul>
 		</div>
 	);
 };

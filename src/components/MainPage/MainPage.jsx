@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import './mainPage.scss';
 
 //img
@@ -96,7 +98,9 @@ const MainPage = props => {
 
 			<footer className='footer'>
 				<div className='container'>
-					<p>Autor: Далеко-далеко</p>
+					<NavLink className='footer__link' to='/about'>
+						О сйте
+					</NavLink>
 				</div>
 			</footer>
 		</div>
